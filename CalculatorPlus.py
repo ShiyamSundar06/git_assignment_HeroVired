@@ -15,6 +15,10 @@ class Calculator:
         if b == 0:
             raise ValueError("Cannot divide by 0")
         return a / b
+
+    
+    def square_root(self, x):
+        return math.sqrt(x)
     
 
 if __name__ == "__main__":
@@ -23,6 +27,7 @@ if __name__ == "__main__":
     num1 = 16
 
     num2 = 4
+    num3 = 25
 
     print(f"{num1} + {num2} = {calculator.add(num1, num2)}")
 
@@ -31,3 +36,6 @@ if __name__ == "__main__":
     print(f"{num1} * {num2} = {calculator.multiply(num1, num2)}")
 
     print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
+
+    print(f"The square root of {num3} = {calculator.square_root(num3)}")
+
